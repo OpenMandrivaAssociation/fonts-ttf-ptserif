@@ -25,7 +25,7 @@ Released by ParaType in 2010.
 
 %prep
 %setup -q -c -n %{pkgname}
-dos2unix -U *.txt
+dos2unix *.txt
 iconv -f cp1252 -t utf8 'PT Free Font License_eng_1.2.txt' > 'PT-Free-Font-License_eng_1.2.txt'
 
 %build
