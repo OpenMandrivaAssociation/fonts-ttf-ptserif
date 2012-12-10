@@ -3,7 +3,7 @@
 Summary:	Fonts to support national alphabet of Russian people
 Name:		fonts-ttf-ptserif
 Version:	0.1
-Release:	%mkrel 2
+Release:	3
 License:	ParaType Free Font License
 Group:		System/Fonts/True type
 URL:		http://www.paratype.com/public/
@@ -25,8 +25,8 @@ Released by ParaType in 2010.
 
 %prep
 %setup -q -c -n %{pkgname}
-dos2unix *.txt
-iconv -f cp1252 -t utf8 'PT Free Font License_eng_1.2.txt' > 'PT-Free-Font-License_eng_1.2.txt'
+iconv -f cp1252 -t utf8 'PT Free Font License_eng_1.2.txt' -o 'PT-Free-Font-License_eng_1.2.txt'
+dos2unix PT-Free-Font-License_eng_1.2.txt
 
 %build
 
@@ -48,3 +48,12 @@ ln -s ../../..%_datadir/fonts/TTF/ptserif \
 %verify(not mtime) %{_xfontdir}/TTF/ptserif/fonts.dir
 %{_xfontdir}/TTF/ptserif/fonts.scale
 %{_sysconfdir}/X11/fontpath.d/ttf-ptserif:pri=50
+
+
+%changelog
+* Fri Dec 09 2011 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.1-2mdv2011.0
++ Revision: 739397
+- Fix for new dos2unix
+- Release bump
+- imported package fonts-ttf-ptserif
+
