@@ -3,7 +3,7 @@
 Summary:	Fonts to support national alphabet of Russian people
 Name:		fonts-ttf-ptserif
 Version:	0.1
-Release:	3
+Release:	4
 License:	ParaType Free Font License
 Group:		System/Fonts/True type
 URL:		http://www.paratype.com/public/
