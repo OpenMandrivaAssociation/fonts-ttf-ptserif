@@ -6,7 +6,7 @@ Version:	0.1
 Release:	4
 License:	ParaType Free Font License
 Group:		System/Fonts/True type
-URL:		http://www.paratype.com/public/
+URL:		https://www.paratype.com/public/
 Source0:	http://www.fontstock.com/public/%{pkgname}.zip
 BuildArch:	noarch
 BuildRequires:	freetype-tools
